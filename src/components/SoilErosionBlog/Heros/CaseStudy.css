@@ -1,0 +1,35 @@
+.caseStudyContainer{
+    height: 100vh;
+    background:#EEE3CB;
+    padding-top: 7% ;
+    /* display:flex; */
+}
+
+.caseStudyContentContainer{
+    background-color: white;
+    display: flex;
+    /* margin: 5%; */
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    box-shadow:  2px 5px 5px 2px rgba(0, 0, 0, .2);
+}
+
+.caseStudyHeading{
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+.caseStudytLeftImage{
+    height: 65vh;
+    border-radius: 50px 0px 0px 50px;
+    height: 80vh;
+    width: 90vh;
+}
+
+.caseStudyContentText{
+    text-align: center;
+    
+}

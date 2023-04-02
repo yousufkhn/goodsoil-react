@@ -1,0 +1,102 @@
+
+body {
+    overflow-x: hidden;
+  }
+.soilFormContainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.button-form{
+    appearance: button;
+    backface-visibility: hidden;
+    background-color:#5E5DF0;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin-right: 7%;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.soilFormContainer{
+    /* text-align: center;
+    background-color:white ;
+    display: flex; */
+}
+
+.soilForm{
+    background-color: transparent;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 9%;
+    border-radius: 50px;
+    /* box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .2); */
+    height: 80%;
+    color: black;
+    position: absolute;
+}
+
+.latInput, .longInput    {
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px;
+  }
+
+.button-form {
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.result{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.formHeading{
+    font-size: 2.5rem;
+    margin-top: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.background{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    right: -120px;
+    /* overflow-x: hidden; */
+    /* top: -100px; */
+}
+
+.inputArea{
+    font-size: 2rem;
+}
