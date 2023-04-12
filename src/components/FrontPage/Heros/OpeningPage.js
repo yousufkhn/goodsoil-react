@@ -8,22 +8,6 @@ import Weather from '../../../lotties/Weather.json'
 
 function OpeningPage() {
 
-    // const [loading, setLoading] = useState(true);
-
-    // const LoadingAnimation = (<Lottie
-    //     animationData={Loading}
-    //     style={{ height: "100%", width: "100%", marginTop: "8px" }}
-    //     height={400}
-    //     width={400}
-    // />)
-
-
-    // setTimeout(() => {
-    //     setLoading(false);
-    // }, 2000);
-
-
-
     const el = useRef(null);
 
     useEffect(() => {
@@ -62,19 +46,18 @@ function OpeningPage() {
             })
     }, []);
 
+
     return (
         <>
-            <div className="maindiv" style={{ width: "100%", height: "100vh", display: "flex" }}>
-                <div style={{ height: "100%", width: "50%", color: "white", opacity: "90%", margin: "25px", marginTop: "100px", marginLeft: "100px", borderRadius: "20px" }}>
+            <div className="maindiv" style={{ width: "100%", height: "100vh", display: "flex", flexWrap: "nowrap" }}>
+                <div style={{ height: "100%", width: "50%", color: "white", opacity: "90%", padding: " 8% 2% 2% 7%", borderRadius: "20px" }}>
                     <h1 style={{ padding: "30px", fontSize: "3rem" }}>Welcome to <span style={{ fontWeight: "bold", color: "#62CDFF", fontSize: "100px" }}>GoodSoil</span></h1>
                     <h1 style={{ padding: "30px", fontSize: "3rem" }}> <span ref={el}></span></h1>
                 </div>
-                <div style={{ width: "50%", color: "brown", opacity: "50%", marginTop: "20px", borderRadius: "19px", overflow: "hidden" }}>
+                <div style={{ height: "100%", width: "50%", color: "brown", opacity: "50%", paddingTop: "5.2%", overflow: "hidden" }}>
                     <Lottie
                         animationData={treePlantation}
-                        style={{ height: "100%", width: "100%", marginTop: "8px" }}
-                        height={400}
-                        width={400}
+                        style={{ height: "100%", width: "100%" }}
                     />
                 </div>
                 {temp === null ? (<>
@@ -82,8 +65,6 @@ function OpeningPage() {
                         <Lottie
                             animationData={Weather}
                             style={{ width: "50px", paddingTop: "7%", paddingRight: "5%" }}
-                            height={400}
-                            width={400}
                         />
                         Loading
                     </button>

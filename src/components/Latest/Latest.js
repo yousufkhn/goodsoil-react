@@ -1,24 +1,25 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import './Latest.css'
 import defaultImage from '../../img/soilDefault.jpg'
+import { cardData } from "./soilNews"
 
 function Latest() {
 
-    const [news, setNews] = useState(null);
+    const news = cardData
 
-    useEffect(() => {
-        const getNews = async () => {
-            const url = 'https://newsapi.org/v2/everything?q=plants+soil&sortBy=relevance&language=en&excludeSources=fox-news&pageSize=50&apiKey=f280b085be63467a9029bd906bff32d1';
-            const response = await fetch(url);
-            const data = await response.json();
-            setNews(data);
-        }
-        getNews();
-    }, []);
 
-    // const handleClick = (url) => {
-    //     window.open = (url);
-    // }
+    //soilapi does not provide free api calls anymore, so made the news constant in soilNews.js
+    //for project
+    // useEffect(() => {
+    //     const getNews = async () => {
+    //         const url = 'https://newsapi.org/v2/everything?q=plants+soil&sortBy=relevance&language=en&excludeSources=fox-news&pageSize=50&apiKey=f280b085be63467a9029bd906bff32d1';
+    //         const response = await fetch(url);
+    //         const data = await response.json();
+    //         setNews(data);
+    //     }
+    //     getNews();
+    // }, []);
+
 
     const handleImageError = (event) => {
         event.target.src = defaultImage;

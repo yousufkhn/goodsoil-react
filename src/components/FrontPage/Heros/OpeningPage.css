@@ -1,9 +1,14 @@
 .maindiv{
     background-image: url("../../../img/mainimage.jpg");
-    /* background-size: cover; */
-    height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
+.maindiv > div {
+    flex: 1;
+}
+
 
 .button-34 {
     background: #5E5DF0;
@@ -32,4 +37,19 @@
     
 }
 
+.mobile-message{
+    display: none;
+}
 
+@media (max-width: 768px) {
+    body {
+      display: none;
+    }
+    .mobile-message {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }

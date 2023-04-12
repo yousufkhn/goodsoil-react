@@ -1,0 +1,21 @@
+.frontPageWholeContainer{
+    height: 100%;
+}
+
+.mobile-message{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .frontPageWholeContainer {
+        height: 0;
+        overflow: hidden;    }
+    .mobile-message {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+  }
