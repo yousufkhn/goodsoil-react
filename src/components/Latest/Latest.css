@@ -203,3 +203,18 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
     }
    }
    
+
+/* slide up effect */
+   .slide-up {
+    transform: translateY(0%);
+    animation: slideUp ease 3s;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(8%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }

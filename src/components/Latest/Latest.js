@@ -1,4 +1,5 @@
-// import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useRef } from 'react'
 import './Latest.css'
 import defaultImage from '../../img/soilDefault.jpg'
 import { cardData } from "./soilNews"
@@ -20,15 +21,28 @@ function Latest() {
     //     getNews();
     // }, []);
 
+    const divRef = useRef(null);
+
+    useEffect(() => {
+        divRef.current.classList.add('slide-up');
+    }, []);
+
 
     const handleImageError = (event) => {
         event.target.src = defaultImage;
     };
 
+    const [pageLoading, setPageLoading] = useState(false);
+
+    setTimeout(() => {
+        setPageLoading(true)
+    }, 2000);
+
+
     return (
 
-        <div className="latestContainer" style={{ display: "flex", background: "white" }}>
-            {news ? (
+        <div className="latestContainer" style={{ display: "flex", background: "white" }} ref={divRef}>
+            {pageLoading ? (
                 <>
                     {
                         news.articles.map((article) => (
@@ -48,11 +62,13 @@ function Latest() {
                 </>
             ) : (
                 <>
-                    <div class="three-body">
+                    <div class="three-body" >
                         <div class="three-body__dot"></div>
                         <div class="three-body__dot"></div>
                         <div class="three-body__dot"></div>
-                    </div></>
+                    </div>
+                    <div style={{ paddingLeft: "1%" }}><h3>Loading Latest News</h3></div>
+                </>
             )
             }
 
