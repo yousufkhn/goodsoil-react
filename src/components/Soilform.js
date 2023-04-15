@@ -22,7 +22,7 @@ function Soilform({ setResultSummary }) {
         setLoading(true);
         const config = {
             headers: {
-                'x-api-key': "4ebdb11c52c41a9cc48a32f9116bb3f2a59375f96b75921c7d0a3ccfd182cb08",
+                'x-api-key': "240e6f59d3bfa55c6b2c7ab8f156c84ab3083b827f777b8ea40d6b6734c1a0d1",
                 'Content-type': "application/json"
             },
         };
